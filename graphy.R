@@ -67,7 +67,7 @@ plot(gr, layout=l, vertex.size=4, edge.arrow.size=0.25, edge.width=0.5)
 
 
 # how do we get back home?
-met_path <- function(this_node, graphy, plot=FALSE){
+get_path <- function(this_node, graphy, plot=FALSE){
 
   first_l<- str_extract(this_node, "^.")
   last_l <- str_extract(this_node, ".$")
