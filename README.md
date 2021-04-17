@@ -8,7 +8,7 @@ So I thought this was an interesting problem in general: "how can you get from o
 
 First I took the list of countries [available from Darius Kazemi's `corpora` repository](https://github.com/dariusk/corpora/blob/master/data/geography/countries.json) (these are Anglicised and there are obvious problems with how we define a country, but for the sake of this exercise we'll just use them for now). 
 
-We can load them into R using the `igraph` package (here's a [helpful page on using `igraph`](https://kateto.net/netscix2016.html)) and then use some [embarrassingly simple R code](TKTKTK URL) to find all the first letter to last letter connections.
+We can load them into R using the `igraph` package (here's a [helpful page on using `igraph`](https://kateto.net/netscix2016.html)) and then use some [embarrassingly simple R code](https://github.com/dill/country_letter_graph/blob/main/graphy.R) to find all the first letter to last letter connections.
 
 Since it's a graph, I thought it would be nice to plot it at this stage? Well turns out that plotting graphs nicely is hard and it gets harder with the number of nodes (vertices) in the graph. So we end up with this nonsense:
 

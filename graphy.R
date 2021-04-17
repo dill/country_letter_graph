@@ -152,6 +152,8 @@ met_path <- function(this_node, graphy, plot=FALSE){
 ll <- lapply(countries$name, get_path, graphy=gr)
 names(ll) <- countries$name
 
+
+# format a markdown table to put in README.md
 ll <- lapply(ll, function(x) c(x, rep(" ", c(6-length(x)))))
 
 sink("tab.md")
